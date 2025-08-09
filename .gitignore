@@ -1,0 +1,66 @@
+# Arquivo .gitignore para o projeto arda-games-api (Python/FastAPI)
+
+# Ambientes Virtuais
+# Nunca envie seu ambiente virtual para o repositório
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak
+.env.bak
+
+# Arquivos de dependências do Python
+# Estes são específicos do sistema operacional e podem ser recriados
+*.egg-info/
+*.egg
+dist/
+build/
+wheels/
+*.tar.gz
+*.whl
+
+# Cache do Python
+# Arquivos de bytecode compilado e cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de configuração de IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos de ambiente
+# NUNCA envie suas variáveis de ambiente para o repositório!
+# Elas contêm segredos como senhas e chaves de API.
+.env
+.env.*
+!.env.example  # Permite o envio de um arquivo de exemplo
+
+# Logs
+# Arquivos de log podem conter informações sensíveis e crescer muito.
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de teste
+# Relatórios de cobertura e caches de teste
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Docker
+# Cache e dados locais do Docker
+.dockerignore
+docker-compose.override.yml
